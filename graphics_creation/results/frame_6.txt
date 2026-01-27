@@ -1,0 +1,85 @@
+`define F6_COLOR_1   21'h1F3F1F
+`define F6_COLOR_2   21'h40602
+`define F6_COLOR_3   21'h1D3B1D
+`define F6_COLOR_4   21'h193219
+`define F6_COLOR_5   21'hD0E05
+`define F6_COLOR_6   21'h193219
+`define F6_COLOR_7   21'h101006
+`define F6_COLOR_8   21'h142814
+`define F6_COLOR_9   21'hE0A02
+`define F6_COLOR_10   21'hF1006
+`define F6_COLOR_11   21'h12170A
+`define F6_COLOR_12   21'h1A3419
+`define F6_COLOR_13   21'h1C1102
+`define F6_COLOR_14   21'h180F02
+`define F6_COLOR_15   21'h70C05
+
+reg valid_F6;
+reg [23:0] lcd_data_F6;
+
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        lcd_data_F6 <= `GREEN_BAD;
+        valid_F6 <= 1'b0;
+    end else begin
+        lcd_data_F6 <= `GREEN_BAD;
+        valid_F6 <= 1'b0;
+        if (inside_sprite && enable_frame6) begin
+            valid_F6 <= 1'b0;
+            case (y_coord)
+               1: case (x_coord)
+                endcase
+               2: case (x_coord)
+                  9: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                endcase
+               3: case (x_coord)
+                  6, 9: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                  7: begin lcd_data_F6 <= `F6_COLOR_8; valid_F6 <= 1'b1; end
+                endcase
+               4: case (x_coord)
+                  4: begin lcd_data_F6 <= `F6_COLOR_5; valid_F6 <= 1'b1; end
+                  6, 7: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                  9: begin lcd_data_F6 <= `F6_COLOR_12; valid_F6 <= 1'b1; end
+                  10: begin lcd_data_F6 <= `F6_COLOR_15; valid_F6 <= 1'b1; end
+                endcase
+               5: case (x_coord)
+                  5: begin lcd_data_F6 <= `F6_COLOR_7; valid_F6 <= 1'b1; end
+                  6, 7, 8, 9, 10: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                endcase
+               6: case (x_coord)
+                  3, 4: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                  5, 6: begin lcd_data_F6 <= `F6_COLOR_7; valid_F6 <= 1'b1; end
+                  7: begin lcd_data_F6 <= `F6_COLOR_8; valid_F6 <= 1'b1; end
+                endcase
+               7: case (x_coord)
+                  4, 7, 8: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                  5, 6: begin lcd_data_F6 <= `F6_COLOR_7; valid_F6 <= 1'b1; end
+                endcase
+               8: case (x_coord)
+                  3: begin lcd_data_F6 <= `F6_COLOR_3; valid_F6 <= 1'b1; end
+                  4, 5, 10: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                  7: begin lcd_data_F6 <= `F6_COLOR_9; valid_F6 <= 1'b1; end
+                  8: begin lcd_data_F6 <= `F6_COLOR_7; valid_F6 <= 1'b1; end
+                  9: begin lcd_data_F6 <= `F6_COLOR_13; valid_F6 <= 1'b1; end
+                endcase
+               9: case (x_coord)
+                  3, 5: begin lcd_data_F6 <= `F6_COLOR_4; valid_F6 <= 1'b1; end
+                  4: begin lcd_data_F6 <= `F6_COLOR_6; valid_F6 <= 1'b1; end
+                  6, 10: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                  7: begin lcd_data_F6 <= `F6_COLOR_10; valid_F6 <= 1'b1; end
+                  8: begin lcd_data_F6 <= `F6_COLOR_11; valid_F6 <= 1'b1; end
+                  9: begin lcd_data_F6 <= `F6_COLOR_14; valid_F6 <= 1'b1; end
+                endcase
+               10: case (x_coord)
+                  4, 7: begin lcd_data_F6 <= `F6_COLOR_7; valid_F6 <= 1'b1; end
+                  5, 6: begin lcd_data_F6 <= `F6_COLOR_2; valid_F6 <= 1'b1; end
+                endcase
+               11: case (x_coord)
+                  7: begin lcd_data_F6 <= `F6_COLOR_8; valid_F6 <= 1'b1; end
+                endcase
+               12: case (x_coord)
+                endcase
+            endcase
+        end
+    end
+end

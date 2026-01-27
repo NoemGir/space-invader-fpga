@@ -1,0 +1,171 @@
+case (x_coord)
+    1: case (y_coord)
+        6: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    2: case (y_coord)
+        5: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    3: case (y_coord)
+        5: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    4: case (y_coord)
+        8: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    5: case (y_coord)
+        9: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+    endcase
+    6: case (y_coord)
+        5: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    7: case (y_coord)
+        2: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        3: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        4: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+    endcase
+    8: case (y_coord)
+        2: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        3: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        4: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    9: case (y_coord)
+        3: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        4: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    10: case (y_coord)
+        4: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    11: case (y_coord)
+        4: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_GRAY; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    12: case (y_coord)
+        4: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+    endcase
+    13: case (y_coord)
+        3: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        4: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    14: case (y_coord)
+        2: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        3: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        4: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        10: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+    endcase
+    15: case (y_coord)
+        2: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        3: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        4: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        5: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_PINK; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_WHITE; valid <= 1'b1; end
+        9: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        11: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        12: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        13: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+    16: case (y_coord)
+        5: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        6: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        7: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+        8: begin lcd_data <= `CAT_BLACK; valid <= 1'b1; end
+    endcase
+endcase

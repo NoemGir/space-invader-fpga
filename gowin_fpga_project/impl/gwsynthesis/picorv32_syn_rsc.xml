@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="104" T_Register="3398(0)" T_Alu="2226(0)" T_Lut="16021(104)" T_Bsram="18(0)">
+ <SubModule name="gw_gao_inst_0" Register="747" Alu="13" Lut="520" Bsram="8" T_Register="747(747)" T_Alu="13(13)" T_Lut="520(520)" T_Bsram="8(8)"/>
+ <SubModule name="soc_leds" Register="6" Lut="3" T_Register="6(6)" T_Lut="3(3)"/>
+ <SubModule name="soc_buttons" Register="5" T_Register="5(5)"/>
+ <SubModule name="soc_score" Register="13" T_Register="13(13)"/>
+ <SubModule name="soc_high_score" Register="14" Lut="2" T_Register="14(14)" T_Lut="2(2)"/>
+ <SubModule name="soc_game_status" Register="2" T_Register="2(2)"/>
+ <SubModule name="soc_game_state" Register="3" Lut="2" T_Register="3(3)" T_Lut="2(2)"/>
+ <SubModule name="pll_40m_inst"/>
+ <SubModule name="lcd_ctrl_inst" Register="23" Lut="1234" T_Register="23(23)" T_Lut="1234(1234)"/>
+ <SubModule name="lcd_data_wrap_inst" Register="15" Alu="12" Lut="18" T_Register="1894(15)" T_Alu="1893(12)" T_Lut="12553(18)">
+  <SubModule name="lcd_data_inst" Register="23" Lut="4859" T_Register="1879(23)" T_Alu="1881(0)" T_Lut="12535(4859)">
+   <SubModule name="word_pixel_inst" Register="26" Lut="302" T_Register="26(26)" T_Lut="807(302)">
+    <SubModule name="title_line" Lut="182" T_Lut="182(182)"/>
+    <SubModule name="play_line" Lut="58" T_Lut="58(58)"/>
+    <SubModule name="score_line" Lut="83" T_Lut="83(83)"/>
+    <SubModule name="score_value_line" Lut="29" T_Lut="29(29)"/>
+    <SubModule name="game_over_line" Lut="18" T_Lut="18(18)"/>
+    <SubModule name="high_score_line" Lut="114" T_Lut="114(114)"/>
+    <SubModule name="high_score_value_line" Lut="21" T_Lut="21(21)"/>
+   </SubModule>
+   <SubModule name="gun_pixel_inst" Register="74" Alu="12" Lut="248" T_Register="74(74)" T_Alu="12(12)" T_Lut="248(248)"/>
+   <SubModule name="wall_pixel_inst_0" Register="46" Lut="172" T_Register="46(46)" T_Lut="172(172)"/>
+   <SubModule name="wall_pixel_inst_1" Register="31" Lut="158" T_Register="31(31)" T_Lut="158(158)"/>
+   <SubModule name="wall_pixel_inst_2" Register="30" Lut="173" T_Register="30(30)" T_Lut="173(173)"/>
+   <SubModule name="bullet_inst" Register="96" Alu="35" Lut="165" T_Register="96(96)" T_Alu="35(35)" T_Lut="165(165)"/>
+   <SubModule name="enemy_pixel_inst_0" T_Register="1553(0)" T_Alu="1834(0)" T_Lut="5953(0)">
+    <SubModule name="u_ctrl" Register="1384" Alu="1217" Lut="5356" T_Register="1384(1384)" T_Alu="1217(1217)" T_Lut="5356(5356)"/>
+    <SubModule name="u_rend" Alu="593" T_Alu="593(593)"/>
+    <SubModule name="explosion_pixel_inst" Register="169" Alu="24" Lut="597" T_Register="169(169)" T_Alu="24(24)" T_Lut="597(597)"/>
+   </SubModule>
+  </SubModule>
+ </SubModule>
+ <SubModule name="reset_controller" Register="6" Alu="6" Lut="2" T_Register="6(6)" T_Alu="6(6)" T_Lut="2(2)"/>
+ <SubModule name="cdt" Register="34" Lut="71" T_Register="34(34)" T_Lut="71(71)"/>
+ <SubModule name="memory" Register="1" T_Register="1(1)" T_Bsram="8(0)">
+  <SubModule name="gmem3" Bsram="2" T_Bsram="2(2)"/>
+  <SubModule name="gmem2" Bsram="2" T_Bsram="2(2)"/>
+  <SubModule name="gmem1" Bsram="2" T_Bsram="2(2)"/>
+  <SubModule name="gmem0" Bsram="2" T_Bsram="2(2)"/>
+ </SubModule>
+ <SubModule name="cpu" Register="650" Alu="314" Lut="1530" Bsram="2" T_Register="650(650)" T_Alu="314(314)" T_Lut="1530(1530)" T_Bsram="2(2)"/>
+</Module>

@@ -1,0 +1,101 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/countdown_timer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/force_rebuild.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/enemies_logic.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/enemies_struct.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/enemies_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/gowin_rpll/pll_40m.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_bullet.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_enemy.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_explosion.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_gun.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_text_line.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_texts.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/image_walls.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/lcd_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/lcd_data.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/lcd_leds/lcd_data_wrapper.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/mem_read_write.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/picorv32.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/sram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/sram8bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

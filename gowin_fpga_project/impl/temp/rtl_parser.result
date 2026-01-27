@@ -1,0 +1,354 @@
+[
+ {
+  "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+  "InstLine" : 2174,
+  "InstName" : "picorv32_regs",
+  "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+  "ModuleLine" : 2174,
+  "ModuleName" : "picorv32_regs"
+ },
+ {
+  "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+  "InstLine" : 2517,
+  "InstName" : "picorv32_axi",
+  "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+  "ModuleLine" : 2517,
+  "ModuleName" : "picorv32_axi",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "InstLine" : 2619,
+    "InstName" : "axi_adapter",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "ModuleLine" : 2731,
+    "ModuleName" : "picorv32_axi_adapter"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "InstLine" : 2674,
+    "InstName" : "picorv32_core",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "ModuleLine" : 62,
+    "ModuleName" : "picorv32"
+   }
+  ]
+ },
+ {
+  "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+  "InstLine" : 2815,
+  "InstName" : "picorv32_wb",
+  "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+  "ModuleLine" : 2815,
+  "ModuleName" : "picorv32_wb",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "InstLine" : 2938,
+    "InstName" : "picorv32_core",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "ModuleLine" : 62,
+    "ModuleName" : "picorv32"
+   }
+  ]
+ },
+ {
+  "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+  "InstLine" : 3,
+  "InstName" : "top",
+  "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 120,
+    "InstName" : "soc_leds",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/mem_read_write.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mem_read_write"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 135,
+    "InstName" : "soc_buttons",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/mem_read_write.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mem_read_write"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 151,
+    "InstName" : "soc_score",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/mem_read_write.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mem_read_write"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 166,
+    "InstName" : "soc_high_score",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/mem_read_write.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mem_read_write"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 181,
+    "InstName" : "soc_game_status",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/mem_read_write.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mem_read_write"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 196,
+    "InstName" : "soc_game_state",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/mem_read_write.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mem_read_write"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 213,
+    "InstName" : "pll_40m_inst",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/gowin_rpll/pll_40m.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "pll_40m"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 230,
+    "InstName" : "lcd_ctrl_inst",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_ctrl.v",
+    "ModuleLine" : 12,
+    "ModuleName" : "lcd_ctrl"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 243,
+    "InstName" : "lcd_data_wrap_inst",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data_wrapper.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "lcd_data_wrapper",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data_wrapper.v",
+      "InstLine" : 74,
+      "InstName" : "lcd_data_inst",
+      "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "lcd_data_mod",
+      "SubInsts" : [
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 108,
+        "InstName" : "word_pixel_inst",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+        "ModuleLine" : 2,
+        "ModuleName" : "image_texts",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 109,
+          "InstName" : "title_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 139,
+          "InstName" : "play_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 176,
+          "InstName" : "score_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 206,
+          "InstName" : "score_value_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 253,
+          "InstName" : "game_over_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 286,
+          "InstName" : "high_score_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_texts.v",
+          "InstLine" : 331,
+          "InstName" : "high_score_value_line",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_text_line.v",
+          "ModuleLine" : 2,
+          "ModuleName" : "text_line"
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 121,
+        "InstName" : "gun_pixel_inst",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_gun.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "gun_pixel_mod"
+       },
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 135,
+        "InstName" : "wall_pixel_inst_0",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_walls.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "wall_pixel_mod"
+       },
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 146,
+        "InstName" : "wall_pixel_inst_1",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_walls.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "wall_pixel_mod"
+       },
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 157,
+        "InstName" : "wall_pixel_inst_2",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_walls.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "wall_pixel_mod"
+       },
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 168,
+        "InstName" : "bullet_inst",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_bullet.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "bullet_pixel_mod"
+       },
+       {
+        "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/lcd_data.v",
+        "InstLine" : 182,
+        "InstName" : "enemy_pixel_inst_0",
+        "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/enemies_top.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "enemies_top",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/enemies_top.v",
+          "InstLine" : 63,
+          "InstName" : "u_ctrl",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/enemies_logic.v",
+          "ModuleLine" : 4,
+          "ModuleName" : "enemy_control"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/enemies_top.v",
+          "InstLine" : 84,
+          "InstName" : "u_rend",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_enemy.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "enemy_renderer"
+         },
+         {
+          "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/enemies_top.v",
+          "InstLine" : 93,
+          "InstName" : "explosion_pixel_inst",
+          "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/lcd_leds/image_explosion.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "explosion_pixel_mod"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 262,
+    "InstName" : "reset_controller",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/reset.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "reset_control"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 269,
+    "InstName" : "cdt",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/countdown_timer.v",
+    "ModuleLine" : 16,
+    "ModuleName" : "countdown_timer"
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 280,
+    "InstName" : "memory",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "sram",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram.v",
+      "InstLine" : 27,
+      "InstName" : "gmem3",
+      "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram8bit.v",
+      "ModuleLine" : 15,
+      "ModuleName" : "sram8"
+     },
+     {
+      "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram.v",
+      "InstLine" : 42,
+      "InstName" : "gmem2",
+      "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram8bit.v",
+      "ModuleLine" : 15,
+      "ModuleName" : "sram8"
+     },
+     {
+      "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram.v",
+      "InstLine" : 57,
+      "InstName" : "gmem1",
+      "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram8bit.v",
+      "ModuleLine" : 15,
+      "ModuleName" : "sram8"
+     },
+     {
+      "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram.v",
+      "InstLine" : 72,
+      "InstName" : "gmem0",
+      "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/sram8bit.v",
+      "ModuleLine" : 15,
+      "ModuleName" : "sram8"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/top.v",
+    "InstLine" : 304,
+    "InstName" : "cpu",
+    "ModuleFile" : "/home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/picorv32_tang_nano_20k-main/src/picorv32.v",
+    "ModuleLine" : 62,
+    "ModuleName" : "picorv32"
+   }
+  ]
+ }
+]

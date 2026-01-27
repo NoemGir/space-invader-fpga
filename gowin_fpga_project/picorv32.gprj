@@ -1,0 +1,34 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/countdown_timer.v" type="file.verilog" enable="1"/>
+        <File path="src/force_rebuild.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/enemies_logic.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/enemies_struct.sv" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/enemies_top.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/gowin_rpll/pll_40m.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_bullet.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_enemy.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_explosion.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_gun.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_text_line.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_texts.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/image_walls.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/lcd_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/lcd_data.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd_leds/lcd_data_wrapper.v" type="file.verilog" enable="1"/>
+        <File path="src/mem_read_write.v" type="file.verilog" enable="1"/>
+        <File path="src/picorv32.v" type="file.verilog" enable="1"/>
+        <File path="src/reset.v" type="file.verilog" enable="1"/>
+        <File path="src/sram.v" type="file.verilog" enable="1"/>
+        <File path="src/sram8bit.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/picorv32.cst" type="file.cst" enable="1"/>
+        <File path="src/picorv32.rao" type="file.gao" enable="1"/>
+        <File path="src/lcd_leds/gowin_rpll/pll_40m.ipc" type="file.other" enable="1"/>
+    </FileList>
+</Project>
