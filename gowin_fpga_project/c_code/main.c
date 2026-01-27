@@ -50,7 +50,7 @@ void game_over_state(){
     set_high_score(high_score);
     show_game_over();
 
-    cdt_delay(6*CLK_FREQ);
+    cdt_delay(3*CLK_FREQ);
 
     if(button1_pushed()) {
         show_start_screen();

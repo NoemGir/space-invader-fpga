@@ -22,7 +22,8 @@ char is_game_over(){
 void show_game_over(){
     *GAME_STATE = 0b11;
 }
-void set_high_score(unsigned int score){
+    void set_high_score(unsigned int score){
+    *GAME_HIGH_SCORE = 0;
     *GAME_HIGH_SCORE = score & 0x3FFF;
 }
 unsigned int get_score(){
