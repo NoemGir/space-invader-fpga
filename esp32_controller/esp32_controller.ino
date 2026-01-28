@@ -55,29 +55,24 @@ void dumpGamepad(ControllerPtr ctl) {
     uint32_t left_stick_x = ctl->axisX();
     uint32_t left_stick_y = ctl->axisY();
 
+    bool but1_pushed = buttons & 0b1;
+    bool stick_to_left = int(left_stick_x) < (-200);
+    bool stick_to_right = int(left_stick_x) > 200;
+    bool stick_to_bottom = int(left_stick_y) > 200;
+    bool stick_to_top = int(left_stick_y) < (-200);
 
-    // si un des input est appuyé
-    if(buttons > 0 || left_stick_x > 200  || int(left_stick_x) < (-200) || left_stick_y > 200 || int(left_stick_y) < (-200) ){
-        bool but1_pushed = buttons & 0b1;
-        bool stick_to_left = int(left_stick_x) < (-200);
-        bool stick_to_right = int(left_stick_x) > 200;
-        bool stick_to_top = int(left_stick_y) > 200;
-        bool stick_to_bottom = int(left_stick_y) < (-200);
+    digitalWrite(left, stick_to_left ? HIGH : LOW);
+    digitalWrite(right, stick_to_right ? HIGH : LOW);
+    digitalWrite(top, stick_to_top ? HIGH : LOW);
+    digitalWrite(bottom, stick_to_bottom ? HIGH : LOW);
+    digitalWrite(button1, but1_pushed ? HIGH : LOW);
 
-
-        analogWrite(button1, but1_pushed);
-        analogWrite(left, stick_to_left );
-        analogWrite(right, stick_to_right );
-        analogWrite(top, stick_to_top );
-        analogWrite(bottom, stick_to_bottom);
-
-        Serial.printf("but1_pushed = " + but1_pushed);
-        Serial.printf("stick_to_top = " + stick_to_top);
-        Serial.printf("stick_to_left = " + stick_to_left);
-        Serial.printf("stick_to_bottom = " + stick_to_bottom);
-        Serial.printf("stick_to_right = " + stick_to_right);
-        Serial.printf("\r\n");
-    }
+    Serial.printf("but1_pushed = %d, ", but1_pushed);
+    Serial.printf("stick_to_top = %d, ", stick_to_top);
+    Serial.printf("stick_to_left = %d, ", stick_to_left);
+    Serial.printf("stick_to_bottom = %d, ", stick_to_bottom);
+    Serial.printf("stick_to_right = %d, ", stick_to_right);
+    Serial.printf("\r\n");
 }
 
 void processGamepad(ControllerPtr ctl) {
@@ -150,69 +145,6 @@ int a_state = 0;
 void loop() {
 
     bool dataUpdated = BP32.update();
-    if (dataUpdated)
-        processControllers();
-
-    //delay(150);
-    if (Serial.available() > 0) {
-        char key = Serial.read();
-
-        switch (key) {
-
-            // ---- KEY PRESSED (LOWERCASE) ----
-            case 'z':
-                Serial.println("advancing");
-                digitalWrite(top, HIGH);
-                digitalWrite(bottom, LOW);
-                digitalWrite(right, LOW);
-                digitalWrite(left, LOW);
-                break;
-
-            case 's':
-                Serial.println("backing");
-                digitalWrite(top, LOW);
-                digitalWrite(bottom, HIGH);
-                digitalWrite(right, LOW);
-                digitalWrite(left, LOW);
-                break;
-
-            case 'q':
-                Serial.println("To the Left");
-                digitalWrite(left, HIGH);
-                digitalWrite(right, LOW);
-                digitalWrite(bottom, LOW);
-                digitalWrite(top, LOW);
-                break;
-
-            case 'd':
-                Serial.println("To the Right");
-                digitalWrite(right, HIGH);
-                digitalWrite(left, LOW);
-                digitalWrite(bottom, LOW);
-                digitalWrite(top, LOW);
-                break;
-
-            case 'a':
-                if (a_state == 1) {
-                    Serial.println("A off ");
-                    digitalWrite(button1, LOW);
-                    a_state = 0;
-                }
-                else {
-                    digitalWrite(button1, HIGH);
-                    Serial.println("A on ");
-                    a_state = 1;
-                }
-                
-                break;
-
-            case 'e':
-                Serial.println("E pushed");
-                digitalWrite(right, LOW);
-                digitalWrite(left, LOW);
-                digitalWrite(bottom, LOW);
-                digitalWrite(top, LOW);                
-            break;
-        }
-    }
+   if (dataUpdated)
+       processControllers();
 }
