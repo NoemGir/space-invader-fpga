@@ -4,7 +4,7 @@ module explosion_pixel_mod
 #(
     parameter FIG_WIDTH = 32, 
     parameter FIG_HEIGHT = 32,
-    parameter FRAME_TIME = 1500000,
+    parameter FRAME_TIME = 1900000,
     parameter NB_FRAME = 6
 )  
 ( 

@@ -14,8 +14,6 @@
 
 enum {START_SCREEN, IN_GAME, GAME_OVER} state = START_SCREEN;
 
-unsigned int high_score = 0; 
-
 void delay_start_screen(){
     cdt_delay(2*CLK_FREQ);
 }
@@ -41,13 +39,6 @@ void in_game_state(){
 
 void game_over_state(){
 
-    unsigned int score = get_score();
-
-
-    if(score > high_score){
-        high_score = score;
-    }
-    set_high_score(high_score);
     show_game_over();
 
     cdt_delay(3*CLK_FREQ);
@@ -59,7 +50,6 @@ void game_over_state(){
     }
 }
 int main() {
-    set_high_score(high_score);
     show_start_screen();
     
     delay_start_screen();

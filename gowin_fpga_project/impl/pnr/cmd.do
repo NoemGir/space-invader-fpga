@@ -3,7 +3,7 @@
 -pn GW2AR-LV18QN88C8/I7
 -cst /home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/src/picorv32.cst
 -cfg /home/nono/Documents/Cours/M2/S1/sysEmb/VHDL/space-invader-fpga/gowin_fpga_project/impl/pnr/device.cfg
--gao_crc 0011111100000001
+-gao_crc 1111010000001100
 -bit
 -tr
 -ph

@@ -4,56 +4,21 @@
     <Mode>Standard</Mode>
     <AoCore index="0" sample_clock="lcd_clk" trig_type="0" storage_depth="1024" window_num="1" capture_amount="1024" implementation="0" trigger_pos="60" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
-            <Bus capture_enable="true" name="game_score_data_o[31:0]">
-                <Signal>game_score_data_o[31]</Signal>
-                <Signal>game_score_data_o[30]</Signal>
-                <Signal>game_score_data_o[29]</Signal>
-                <Signal>game_score_data_o[28]</Signal>
-                <Signal>game_score_data_o[27]</Signal>
-                <Signal>game_score_data_o[26]</Signal>
-                <Signal>game_score_data_o[25]</Signal>
-                <Signal>game_score_data_o[24]</Signal>
-                <Signal>game_score_data_o[23]</Signal>
-                <Signal>game_score_data_o[22]</Signal>
-                <Signal>game_score_data_o[21]</Signal>
-                <Signal>game_score_data_o[20]</Signal>
-                <Signal>game_score_data_o[19]</Signal>
-                <Signal>game_score_data_o[18]</Signal>
-                <Signal>game_score_data_o[17]</Signal>
-                <Signal>game_score_data_o[16]</Signal>
-                <Signal>game_score_data_o[15]</Signal>
-                <Signal>game_score_data_o[14]</Signal>
-                <Signal>game_score_data_o[13]</Signal>
-                <Signal>game_score_data_o[12]</Signal>
-                <Signal>game_score_data_o[11]</Signal>
-                <Signal>game_score_data_o[10]</Signal>
-                <Signal>game_score_data_o[9]</Signal>
-                <Signal>game_score_data_o[8]</Signal>
-                <Signal>game_score_data_o[7]</Signal>
-                <Signal>game_score_data_o[6]</Signal>
-                <Signal>game_score_data_o[5]</Signal>
-                <Signal>game_score_data_o[4]</Signal>
-                <Signal>game_score_data_o[3]</Signal>
-                <Signal>game_score_data_o[2]</Signal>
-                <Signal>game_score_data_o[1]</Signal>
-                <Signal>game_score_data_o[0]</Signal>
-            </Bus>
-            <Signal capture_enable="true">game_score_sel</Signal>
-            <Bus capture_enable="true" name="lcd_data_wrap_inst/lcd_data_inst/score[13:0]">
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[13]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[12]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[11]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[10]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[9]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[8]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[7]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[6]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[5]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[4]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[3]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[2]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[1]</Signal>
-                <Signal>lcd_data_wrap_inst/lcd_data_inst/score[0]</Signal>
+            <Bus capture_enable="true" name="lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[13:0]">
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[13]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[12]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[11]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[10]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[9]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[8]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[7]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[6]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[5]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[4]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[3]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[2]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[1]</Signal>
+                <Signal>lcd_data_wrap_inst/lcd_data_inst/word_pixel_inst/score[0]</Signal>
             </Bus>
             <Bus capture_enable="true" name="lcd_data_wrap_inst/lcd_data_inst/high_score[13:0]">
                 <Signal>lcd_data_wrap_inst/lcd_data_inst/high_score[13]</Signal>
@@ -71,83 +36,11 @@
                 <Signal>lcd_data_wrap_inst/lcd_data_inst/high_score[1]</Signal>
                 <Signal>lcd_data_wrap_inst/lcd_data_inst/high_score[0]</Signal>
             </Bus>
-            <Signal capture_enable="true">lcd_data_wrap_inst/lcd_data_inst/show_game_over</Signal>
-            <Signal capture_enable="true">lcd_data_wrap_inst/game_over_finished</Signal>
-            <Signal capture_enable="true">lcd_data_wrap_inst/is_game_over</Signal>
-            <Bus capture_enable="true" name="soc_high_score/mem_data_i[13:0]">
-                <Signal>soc_high_score/mem_data_i[13]</Signal>
-                <Signal>soc_high_score/mem_data_i[12]</Signal>
-                <Signal>soc_high_score/mem_data_i[11]</Signal>
-                <Signal>soc_high_score/mem_data_i[10]</Signal>
-                <Signal>soc_high_score/mem_data_i[9]</Signal>
-                <Signal>soc_high_score/mem_data_i[8]</Signal>
-                <Signal>soc_high_score/mem_data_i[7]</Signal>
-                <Signal>soc_high_score/mem_data_i[6]</Signal>
-                <Signal>soc_high_score/mem_data_i[5]</Signal>
-                <Signal>soc_high_score/mem_data_i[4]</Signal>
-                <Signal>soc_high_score/mem_data_i[3]</Signal>
-                <Signal>soc_high_score/mem_data_i[2]</Signal>
-                <Signal>soc_high_score/mem_data_i[1]</Signal>
-                <Signal>soc_high_score/mem_data_i[0]</Signal>
-            </Bus>
-            <Bus capture_enable="true" name="soc_high_score/mem_data_o[31:0]">
-                <Signal>soc_high_score/mem_data_o[31]</Signal>
-                <Signal>soc_high_score/mem_data_o[30]</Signal>
-                <Signal>soc_high_score/mem_data_o[29]</Signal>
-                <Signal>soc_high_score/mem_data_o[28]</Signal>
-                <Signal>soc_high_score/mem_data_o[27]</Signal>
-                <Signal>soc_high_score/mem_data_o[26]</Signal>
-                <Signal>soc_high_score/mem_data_o[25]</Signal>
-                <Signal>soc_high_score/mem_data_o[24]</Signal>
-                <Signal>soc_high_score/mem_data_o[23]</Signal>
-                <Signal>soc_high_score/mem_data_o[22]</Signal>
-                <Signal>soc_high_score/mem_data_o[21]</Signal>
-                <Signal>soc_high_score/mem_data_o[20]</Signal>
-                <Signal>soc_high_score/mem_data_o[19]</Signal>
-                <Signal>soc_high_score/mem_data_o[18]</Signal>
-                <Signal>soc_high_score/mem_data_o[17]</Signal>
-                <Signal>soc_high_score/mem_data_o[16]</Signal>
-                <Signal>soc_high_score/mem_data_o[15]</Signal>
-                <Signal>soc_high_score/mem_data_o[14]</Signal>
-                <Signal>soc_high_score/mem_data_o[13]</Signal>
-                <Signal>soc_high_score/mem_data_o[12]</Signal>
-                <Signal>soc_high_score/mem_data_o[11]</Signal>
-                <Signal>soc_high_score/mem_data_o[10]</Signal>
-                <Signal>soc_high_score/mem_data_o[9]</Signal>
-                <Signal>soc_high_score/mem_data_o[8]</Signal>
-                <Signal>soc_high_score/mem_data_o[7]</Signal>
-                <Signal>soc_high_score/mem_data_o[6]</Signal>
-                <Signal>soc_high_score/mem_data_o[5]</Signal>
-                <Signal>soc_high_score/mem_data_o[4]</Signal>
-                <Signal>soc_high_score/mem_data_o[3]</Signal>
-                <Signal>soc_high_score/mem_data_o[2]</Signal>
-                <Signal>soc_high_score/mem_data_o[1]</Signal>
-                <Signal>soc_high_score/mem_data_o[0]</Signal>
-            </Bus>
-            <Bus capture_enable="true" name="soc_high_score/data[13:0]">
-                <Signal>soc_high_score/data[13]</Signal>
-                <Signal>soc_high_score/data[12]</Signal>
-                <Signal>soc_high_score/data[11]</Signal>
-                <Signal>soc_high_score/data[10]</Signal>
-                <Signal>soc_high_score/data[9]</Signal>
-                <Signal>soc_high_score/data[8]</Signal>
-                <Signal>soc_high_score/data[7]</Signal>
-                <Signal>soc_high_score/data[6]</Signal>
-                <Signal>soc_high_score/data[5]</Signal>
-                <Signal>soc_high_score/data[4]</Signal>
-                <Signal>soc_high_score/data[3]</Signal>
-                <Signal>soc_high_score/data[2]</Signal>
-                <Signal>soc_high_score/data[1]</Signal>
-                <Signal>soc_high_score/data[0]</Signal>
-            </Bus>
-            <Signal capture_enable="true">soc_high_score/mem_sel</Signal>
-            <Signal capture_enable="true">soc_high_score/we</Signal>
-            <Signal capture_enable="true">soc_high_score/mem_ready</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
                 <SignalList>
-                    <Signal>soc_score/mem_sel</Signal>
+                    <Signal>lcd_data_wrap_inst/game_over_finished</Signal>
                 </SignalList>
             </Trigger>
             <Trigger index="1"/>
@@ -188,5 +81,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0011111100000001</GAO_ID>
+    <GAO_ID>1111010000001100</GAO_ID>
 </GAO_CONFIG>

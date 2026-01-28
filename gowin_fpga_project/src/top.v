@@ -64,15 +64,15 @@ module top (
    wire game_status_ready;
    wire game_state_ready;
    wire game_score_ready;
-   wire game_high_score_ready;
+  // wire game_high_score_ready;
 
    wire [31:0]  game_state_data_o;
    wire [31:0]  game_status_data_o;
    wire [31:0]  game_score_data_o;
-   reg [31:0]  game_high_score_data_o;
+  // wire [31:0]  game_high_score_data_o;
 
    wire [2:0]   game_status;
-   reg [13:0]  global_score;
+   wire [13:0]  global_score;
 
 
    // Establish memory map for all slaves:
@@ -97,7 +97,7 @@ module top (
     assign game_high_score_sel = mem_valid && (mem_addr == 32'h80000030);
 
    // Core can proceed regardless of *which* slave was targetted and is now ready.
-   assign mem_ready = mem_valid & (sram_ready | leds_ready  | cdt_ready  | buttons_ready | game_status_ready | game_state_ready | game_score_ready | game_high_score_ready);
+   assign mem_ready = mem_valid & (sram_ready | leds_ready  | cdt_ready  | buttons_ready | game_status_ready | game_state_ready | game_score_ready); // | game_high_score_ready);
 
 
    // Select which slave's output data is to be fed to core.
@@ -108,10 +108,10 @@ module top (
                       game_status_sel ? game_status_data_o : 
                       game_state_sel ? game_state_data_o : 
                       game_score_sel ? game_score_data_o : 
-                      game_high_score_sel ? game_high_score_data_o : 32'h0;
+                      game_high_score_sel ? 32'h0 : 32'h0;
 
 
-   assign leds =  ~game_status; // ~leds_data_o[5:0] | ~buttons; // Connect to the LEDs of the FPGA
+   assign leds =  ~buttons; // ~leds_data_o[5:0] | ~buttons; // Connect to the LEDs of the FPGA
 
    // LEDS READ AND WRITE 
    mem_read_write #(
@@ -145,34 +145,23 @@ module top (
 
    // GAME SCORE READ ONLY 
 
-   mem_read_write #(
-        .DATA_SIZE(14)
-    )
-    soc_score
-   (
-      .clk(clk),
-      .reset_n(reset_n),
-      .mem_sel(game_score_sel),
-      .mem_data_i(global_score),
-      .we(1'b1),
-      .mem_ready(game_score_ready),
-      .mem_data_o(game_score_data_o) // read by the processor 
-   );
+//   assign game_score_data_o = {{(18){1'b0}}, global_score};
+//   assign game_score_ready = game_score_sel;
 
-    // GAME HIGH SCORE WRITE ONLY 
-   mem_read_write #(
-        .DATA_SIZE(14)
-    )
-    soc_high_score
-   (
-      .clk(clk),
-      .reset_n(reset_n),
-      .mem_sel(game_high_score_sel),
-      .mem_data_i(mem_wdata[13:0]),
-      .we(|mem_wstrb[1:0]),
-      .mem_ready(game_high_score_ready),
-      .mem_data_o(game_high_score_data_o)
-   );
+//     GAME HIGH SCORE WRITE ONLY 
+//   mem_read_write #(
+//        .DATA_SIZE(14)
+//    )
+//    soc_high_score
+//   (
+//      .clk(clk),
+//      .reset_n(reset_n),
+//      .mem_sel(game_high_score_sel),
+//      .mem_data_i(mem_wdata[13:0]),
+//      .we(|mem_wstrb[1:0]),
+//      .mem_ready(game_high_score_ready),
+//      .mem_data_o(game_high_score_data_o)
+//   );
 
    // GAME STATUS READ ONLY 
    mem_read_write #(
@@ -248,7 +237,7 @@ module top (
         .lcd_ypos(lcd_ypos),	//lcd vertical coordinate
 
         .game_state(game_state_data_o[2:0]),	
-        .high_score(game_high_score_data_o[13:0]),
+      //  .high_score(game_high_score_data_o[13:0]),
 
         .game_status(game_status),	
         .score(global_score),	

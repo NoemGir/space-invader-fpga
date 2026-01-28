@@ -3,8 +3,8 @@ import enemies_struct::*;
 
 module enemies_top
 #(
-	parameter Y_MAX = 475,
-	parameter X_MAX = 640,
+	parameter Y_MAX = 490,
+	parameter X_MAX = 655,
     parameter FIG_X0 = 100, 
     parameter FIG_Y0 = 45 ,
     parameter ENEMY_WIDTH = 46,

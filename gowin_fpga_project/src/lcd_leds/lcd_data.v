@@ -19,8 +19,8 @@ module lcd_data_mod
     input wire          enable_game,
     input wire          show_game_start,
     input wire          show_game_over,
-    input       [13:0]  high_score,
-    input       [13:0]  score,
+    input wire  [13:0]  high_score,
+    input wire  [13:0]  score,
 
 
     output [1:0] plus_score,

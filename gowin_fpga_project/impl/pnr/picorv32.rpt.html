@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Jan 27 12:26:27 2026
+<td>Wed Jan 28 08:43:57 2026
 </td>
 </tr>
 <tr>
@@ -98,23 +98,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td class="label">Place & Route Process</td>
 <td>Running placement:
    Placement Phase 0: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 11s
-   Placement Phase 1: CPU time = 0h 0m 0.99s, Elapsed time = 0h 0m 0.999s
-   Placement Phase 2: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
-   Placement Phase 3: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 11s
-   Total Placement: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
+   Placement Phase 1: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+   Placement Phase 2: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s
+   Placement Phase 3: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s
+   Total Placement: CPU time = 0h 0m 40s, Elapsed time = 0h 0m 40s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.013s, Elapsed time = 0h 0m 0.014s
-   Routing Phase 1: CPU time = 0h 0m 0.495s, Elapsed time = 0h 0m 0.517s
-   Routing Phase 2: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
+   Routing Phase 0: CPU time = 0h 0m 0.017s, Elapsed time = 0h 0m 0.017s
+   Routing Phase 1: CPU time = 0h 0m 0.642s, Elapsed time = 0h 0m 0.655s
+   Routing Phase 2: CPU time = 0h 1m 25s, Elapsed time = 0h 1m 26s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
+   Total Routing: CPU time = 0h 1m 26s, Elapsed time = 0h 1m 26s
 Generate output files:
    CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 1m 12s, Elapsed time = 0h 1m 12s, Peak memory usage = 6193MB</td>
+<td>CPU time = 0h 2m 7s, Elapsed time = 0h 2m 7s, Peak memory usage = 862MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>18576/20736</td>
-<td>90%</td>
+<td>18456/20736</td>
+<td>89%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>18576(16016 LUT, 2560 ALU, 0 ROM16)</td>
+<td>18456(15890 LUT, 2566 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -144,8 +144,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>3398/15750</td>
-<td>22%</td>
+<td>2986/15750</td>
+<td>19%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as Latch</td>
@@ -154,8 +154,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>3393/15552</td>
-<td>22%</td>
+<td>2981/15552</td>
+<td>20%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as Latch</td>
@@ -169,8 +169,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>9740/10368</td>
-<td>94%</td>
+<td>9564/10368</td>
+<td>93%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
@@ -199,8 +199,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">BSRAM</td>
-<td>8 SP<br/>10 SDPB<br/></td>
-<td>40%</td>
+<td>8 SP<br/>4 SDPB<br/></td>
+<td>27%</td>
 </tr>
 </table>
 <h2><a name="I/O_Bank_Usage_Summary">I/O Bank Usage Summary:</a></h2>
@@ -295,17 +295,12 @@ Generate output files:
 <td> BR</td>
 </tr>
 <tr>
-<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][3].x_11_5</td>
+<td class="label">cpu/n7700_3</td>
 <td>PRIMARY</td>
-<td> TR TL BR BL</td>
+<td> TR</td>
 </tr>
 <tr>
 <td class="label">n39_7</td>
-<td>LW</td>
-<td> -</td>
-</tr>
-<tr>
-<td class="label">mem_valid</td>
 <td>LW</td>
 <td> -</td>
 </tr>
@@ -315,27 +310,32 @@ Generate output files:
 <td> -</td>
 </tr>
 <tr>
-<td class="label">gw_gao_inst_0/u_la0_top/n20_3</td>
+<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][0].x_11_8</td>
 <td>LW</td>
 <td> -</td>
 </tr>
 <tr>
-<td class="label">gw_gao_inst_0/u_la0_top/data_out_shift_reg_126_7</td>
+<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][1].x_11_8</td>
 <td>LW</td>
 <td> -</td>
 </tr>
 <tr>
-<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][0].x_11_5</td>
+<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][2].x_11_8</td>
 <td>LW</td>
 <td> -</td>
 </tr>
 <tr>
-<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][1].x_11_5</td>
+<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][3].x_11_8</td>
 <td>LW</td>
 <td> -</td>
 </tr>
 <tr>
-<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][2].x_11_5</td>
+<td class="label">lcd_data_wrap_inst/lcd_data_inst/enemy_pixel_inst_0/u_ctrl/enemies[0][4].x_11_8</td>
+<td>LW</td>
+<td> -</td>
+</tr>
+<tr>
+<td class="label">cpu/n3610_3</td>
 <td>LW</td>
 <td> -</td>
 </tr>

@@ -13,13 +13,16 @@ module lcd_data_wrapper
     input  wire [4:0]  buttons,
 
     input  wire [2:0]   game_state,
-    input       [13:0]   high_score,
+  //  input       [13:0]   high_score,
 
     output wire [2:0]   game_status,
     output wire [13:0]  score,
 
     output wire [23:0]  lcd_data
 );
+
+wire [13:0]  high_score;
+reg [13:0]  high_score_reg;
 
 wire [10:0] lcd_xpos_new;
 wire [10:0] lcd_ypos_new;
@@ -59,6 +62,18 @@ always @(posedge clk or negedge rst_n) begin
 end
 
 assign score = computed_score;
+assign high_score = high_score_reg; 
+
+always @(posedge clk or negedge rst_n) begin 
+    if(!rst_n) 
+        high_score_reg <= 14'd0;
+    else if (game_over_finished) begin 
+        if (score > high_score_reg)
+            high_score_reg <= score;
+    end
+end 
+
+
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) 
@@ -67,7 +82,6 @@ always @(posedge clk or negedge rst_n) begin
         computed_score <= 14'd0;
     else if (plus_score != 2'b00) 
         computed_score <= score + (plus_score * 10);
-
 end
 
 
